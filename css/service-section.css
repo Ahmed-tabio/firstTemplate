@@ -1,0 +1,63 @@
+/*
+==========================================================================================
+4-  4.5- Service Section
+===========================================================================================
+*/
+.service-list,
+.service-bullets{
+    list-style: disc;
+}
+
+.service .section-header,
+.service-rightView{
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+}
+
+.service .section-header-title{
+    text-align: left;
+}
+.service .section-header-line{
+    margin: 0; /*disable auto margin*/
+}
+.service-describtion{
+    color : var(--gray-color);
+    line-height: 1.6;
+    font-size: 14px;
+}
+.service-list{
+    list-style: none;
+}
+.service-list li{
+    color: #807d7d;
+}
+.service-list i{
+    color: var(--main-cokor);
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border: 1px solid var(--main-cokor);
+    border-radius: 50%;
+}
+.service-image{
+    width: 100%; /*اي صورة ايا كان حجمها تشغل 100 فالمية من الديف الحاوي لها .. مهم جدا*/
+}
+.service-bullets{
+    list-style: none;
+    text-align: center;
+}
+.service-bullets li{
+    display: inline-block;
+    background-color: #a8a8a8;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+.service-bullets li.active{
+    background-color: var(--main-cokor);
+}
+.service-bullets li:hover{
+    background-color: var(--main-cokor);
+}

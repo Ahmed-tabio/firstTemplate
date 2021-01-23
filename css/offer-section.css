@@ -1,0 +1,31 @@
+/*
+==========================================================================================
+4-  4.4- Offer Section
+===========================================================================================
+*/
+
+.offer-content-element{
+    border: 1px solid #a8a8a8;
+    padding: 30px 20px 30px 70px;
+    position: relative; /*to move the icon relative to it*/
+}
+.offer-content-element.margined{
+    margin: 0 5%;
+} 
+.offer-content-element .icon{
+    position: absolute; /*pin somthing using float*/
+    top: 35px;
+    left: 20px;
+    color: var(--main-cokor);
+}
+.content-e-title{
+    text-transform: capitalize;
+    transition:color 0.5s;
+}
+.content-e-describtion{
+    text-transform: capitalize;
+    color: rgb(177, 177, 177);
+}
+.offer-content-element:hover .content-e-title{
+    color: var(--white-color);
+}

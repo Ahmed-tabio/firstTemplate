@@ -1,0 +1,28 @@
+/*
+==========================================================================================
+4-  4.6- stat Section
+===========================================================================================
+*/
+.stat{
+    position: relative; /*overlay on the chile div for stat now moving according to .stat*/
+    
+    background-image: url(../images/background/background2.webp);
+    height: 300px; /* to remve the child absolute position .. to show the background*/
+
+    background-attachment: fixed;
+    background-size: cover;
+}
+.stat-item{
+    text-align: center;
+    margin: 100px 0;
+}
+.stat-item .icon{
+    color: var(--main-cokor);
+}
+.stat-item-number{
+    color: var(--white-color);
+    font-size: 35px;
+}
+.stat-item-text{
+    color: var(--white-color);
+}

@@ -1,0 +1,97 @@
+/*
+==========================================================================================
+4-  4.3- Portofolio Section
+===========================================================================================
+*/
+.portfolio-item{
+    position: relative;/*the overlay effect (layerWithContent) will move with position absolute*/
+    padding: 10px; /*انكماش الصورة لان البادينج هو جزء من ال ويدث, وهذا تكملة لظهور الايفيكت اكبر من الصورة*/
+}
+.portfolio-item.margined{/* 2nd and 5th items only*/
+    margin: 0 5%;
+}
+.portfolio-item img{
+    width: 100%; /*100% of 30%(.portfolio-item)from 80%(container) from body*/
+}
+.portfolio-item .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /*from its parent .portfolio-item*/
+    height: 100%;
+    
+    background-color: rgb(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .5s;
+
+}
+.portfolio-item:hover .layer{
+    opacity: 1;
+    visibility:visible;
+}
+
+
+.layer-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+.layer .word{
+    display: block;
+    color:var(--main-cokor);
+    text-transform: uppercase;
+
+    position: relative;
+    top: 10px; 
+
+    visibility: hidden;
+    opacity: 0;
+    transition: top 0.5s;
+    transition-delay: 0.2s;
+}
+.layer .layer-content-title{
+    font-size: 17px;
+    color: var(--white-color);
+    position: relative;
+    top: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.5s;    
+    transition-delay: 0.3s;
+}
+.layer-content a{
+    display: inline-block;/**/
+    width: 40px;
+    height: 40px;
+    background-color:var(--main-cokor);
+    border-radius: 15px;
+
+    position: relative;
+    top: 10px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: top 0.5s;
+    transition-delay: 0.3s;
+}
+
+.portfolio-item:hover  .word,
+.portfolio-item:hover  .layer-content-title,
+.portfolio-item:hover  a {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.layer-content a i{
+    color: var(--white-color);
+    line-height: 40px; /*same hieght of the element */
+}
+
+

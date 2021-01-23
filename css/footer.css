@@ -1,0 +1,39 @@
+/*
+==========================================================================================
+5-Footer
+===========================================================================================
+*/
+.footer{
+    background-color: #1c1d21;
+    text-align: center;
+    padding: 60px 0;
+}
+.footer-social-icons{
+    list-style: none;
+    margin: 20px 0;
+}
+.footer-social-icons li{
+    display: inline-block;
+    margin: 5px;
+}
+.footer-social-icons li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-cokor);
+}
+.footer-social-icons li a i{
+    line-height: 50px;
+    color:var(--white-color);
+}
+.footer img{
+
+}
+.footer p{
+    color:var(--gray-color);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.footer p span{
+    color:var(--main-cokor);
+}

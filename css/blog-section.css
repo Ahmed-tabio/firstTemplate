@@ -1,0 +1,46 @@
+/*
+==========================================================================================
+4-  4.10- Blog Section
+===========================================================================================
+*/
+.blog-item{
+    background-color: var(--white-color);
+}
+.blog-item.margined{
+    margin: 0 5%;
+}
+.blog-image{
+
+}
+.blog-image img{
+    width: 100%;
+}
+.blog-content-shifted{
+    padding: 20px ;
+}
+.blog-icon-list{
+    list-style: none;
+    margin: 10px 0;
+}
+.blog-icon-list li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.blog-icon-list li .icon{
+    color: var(--main-cokor);
+}
+.blog-item-title{
+    font-weight: bold;
+    margin: 20px 0;
+
+}
+.blog-item-describtion{
+    color: var(--gray-color);
+    line-height: 1.5;
+
+}
+.blog-link{
+    color: var(--main-cokor);
+    text-transform: capitalize;
+    font-size: 18px;
+}

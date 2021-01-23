@@ -1,0 +1,39 @@
+/*
+==========================================================================================
+4-  4.8- testimonial Section
+===========================================================================================
+*/
+.testmonial{
+    position: relative;
+
+    background-image: url('../images/background/background3.webp');
+    background-size: cover;
+    background-attachment: fixed; 
+    /*لحد هنا الصورة مظهرتش وعلي الرغم انها لسة متكررة معانا فوق ولكن مهم تاخد بالك من الخطأدا */
+    height: 400px;  
+}
+.testmonial-boxcontent{
+    color:var(--white-color); /*temp*/
+    padding: 100px 100px; /*تضييق المساحات اضيق من الحاوي 80 فالمية وايضا وسطنة العناصر في الصورة*/
+    position: relative;
+}
+.testmonial-head{
+    padding: 0 40px 50px 100px;
+}
+.testmonial-head img{
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    border-radius: 50%;
+}
+.testmonial-head-name{
+    margin: 5px 0;
+    font-size: 18px;
+}
+.testmonial-head-job{
+    color: var(--main-cokor);
+}
+.testmonial-body-describtion{
+    line-height: 1.4;
+    font-size: 17px;
+}

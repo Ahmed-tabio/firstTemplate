@@ -1,0 +1,74 @@
+/*
+==========================================================================================
+4-  4.9- team Section
+===========================================================================================
+*/
+.team-item{
+    padding: 40px 15px; 
+    background-color: #e8e8e8;
+}
+.team-item.margined{
+    margin: 0 5%;
+}
+.team-item-image{
+    width: 90%;
+    margin: auto;
+    position: relative; /*عشان الايقون والاوفرلاي يتحركو بالنسبالها بالبوزيشن*/
+}
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .5s;
+
+}
+.team-item:hover .team-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.team-item.ttb-effect{
+    z-index: 1; /*مهم جدا جدا "خطأ محتمل"*/
+}
+.team-item-image img{
+    width: 100%;
+}
+.team-item-encapsulation{
+    text-align: center;
+    margin-top: 25px;
+}
+.team-item-encapsulation .name{
+    color: #222;
+    text-transform: capitalize;
+    transition: color .5s;
+
+}
+.team-item:hover .team-item-encapsulation .name{
+    color: var(--white-color);
+}
+.team-item-encapsulation .job{
+    color:var(--gray-color);
+    transition: color 0.7s;
+}
+.team-item:hover .team-item-encapsulation .job{
+    color:var(--main-cokor);
+}
+.team-overlay-social a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(65, 105, 225, 0.4);
+    color:var(--white-color);
+    border: .5px solid var(--white-color);
+    margin: 5px 0;
+    text-align: center; /*الوسطنة فن*/
+    margin-left: auto; /*مهم جدا .. زق نفسك من عاليمين وخليك ف اقصي الشمال*/
+}
+.team-overlay-social a i{
+    line-height: 40px; /*وسطنة ايقون رأسيا داخل عنصر أب مباشر .. اديها نفس ارتفاع الاب*/
+}

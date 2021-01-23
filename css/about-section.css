@@ -1,0 +1,31 @@
+/*
+==========================================================================================
+4-  4.2- about Section
+===========================================================================================
+*/
+.about .about-content-item{
+    text-align: center;
+    border: 1px solid rgb(213, 212, 212);
+    padding: 50px 25px;
+}
+.about .about-content-item.margined{ /*NOT .about .about-content-item .margined, beause the declared one means .abount is parent and one element takes the tow calsses .about-content-item and .margined*/
+    margin: 0 5%;
+}
+.about-content .icon{
+    color:var(--main-cokor);
+}
+.about-content-item-title{ /*no need for nesting as we embed it so human can understand and the computer will not face any problem*/
+    text-transform: capitalize;
+}
+.about-content-item-describtion{
+    line-height: 1.6;
+    color: var(--gray-color);
+}
+.about-content-item-clickable{
+    text-transform: capitalize;
+    color: var(--main-cokor);
+}
+.about-content-item:hover .about-content-item-title{
+    color: var(--white-color);
+    transition: color 0.5s;
+}

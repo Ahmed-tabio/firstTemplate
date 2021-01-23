@@ -1,0 +1,119 @@
+/*
+==========================================================================================
+3-Header
+==========================================================================================
+*/
+.primary-header{
+    background:transparent;
+    position: fixed; /*to make it a part of the Home Section Backgsround and? ... */
+    width:100%; /*to eliminate the effect of position:fixed that make the header inline-block*/
+    z-index: 1; /*the header content above the classes underlying*/
+    background-color: rgb(0, 0, 0, 00.2);
+}
+
+.primary-header .nav>li>a{
+    color: var(--white-color);
+}
+/*
+.overlay implemented here
+*/
+/*
+.container implemented here
+*/
+
+/*
+containing Floats
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*
+Containing floats 
+overflow:hidden;
+*/
+/*
+.group{ غير صالح اذا اردت ان تلحق بعنصر في ال الهيدر دروب داون مينيو 
+    overflow: hidden;
+}
+*/
+/*
+Make Float 
+..you can reduce the width and fine tune margins and paddings
+*/
+
+/* Logo Image div*/
+.primary-header .logo{
+    margin-top: 20px;
+}
+.primary-header img{
+    width: 25%; /*from logo div width*/
+}
+/* nav Bar*/
+.primary-header .primary-nav{
+    width: 70%;
+    text-align: right;
+}
+.primary-header .nav > li{
+    display: inline-block;
+    text-align: right;
+} 
+.primary-header .nav > li > a{
+    display: block;     /*make the a inline element block to fill li block element*/ 
+    padding: 30px 10px; /*to make the clickable part wider*/    
+}
+/*create lines while hovering on list item*/
+.primary-header .nav >li >a::after{
+    width: 0;
+}
+.primary-header .nav >li> a.active::after,
+.primary-header .nav >li >a::after{
+    content: "";
+    display: block; 
+    background-color: var(--main-cokor);
+    height: 2px;
+    margin-top: 2px;
+    transition: width 0.5s;
+}
+.primary-header .nav> li >a.active::after{ 
+    width: 100%;
+}
+.primary-header .nav >li >a:hover::after{ /*IMPORTANT*/
+    width: 100%;
+}
+/*
+The Drop Down Menu
+*/
+.primary-header .primary-nav .dropdown { /* Parent to the dropdown*/ 
+    position: relative;
+
+}
+.primary-header .primary-nav .dropdown-menu{
+    position: absolute;
+    left: -50%;
+    top: 73%;
+    background-color: var(--main-cokor);
+    width: 150px;
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: visibility 2s;
+}
+.primary-header .primary-nav .dropdown-menu a{
+    display: block; /*make the a inline element block to fill li block element*/
+    padding: 10px;
+}
+.primary-header .primary-nav .dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}

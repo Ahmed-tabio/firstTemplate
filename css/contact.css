@@ -1,0 +1,76 @@
+/*
+==========================================================================================
+4-  4.11- Contact Section
+===========================================================================================
+*/
+.contact-info{
+
+}
+.contact-info-item i,
+.contact-info-item .word,
+.contact-info-item .contact-method{
+    display: block;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.contact-info-item{
+    padding: 0 10%;
+    text-align: center;
+}
+.contact-info-item.margined{
+    margin: 0 5%;
+}
+.contact-info-item i{
+    color: var(--main-cokor);
+}
+.contact-info-item .word{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-info-item .contact-method{
+    color: rgb(213, 212, 212);
+}
+
+
+
+.contact form{
+    padding: 0 25%;
+}
+
+.contact form .username-field,
+.contact form  .email-field,
+.contact form .subject-field,
+.contact form textarea{
+    height: 35px;
+    border: none;
+    background-color: #fbfbfb;
+}
+.contact form .username-field,
+.contact form  .email-field{
+    margin: 10px 0;
+    display: inline-block;
+    width: 49%;   
+}
+.contact form  .email-field{
+    margin-left:1%;
+}
+.contact form .subject-field{
+    width: 100%;
+    margin: 10px 0;
+}
+.contact form textarea{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+.contact button{
+    border: none;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    color: var(--white-color);
+    background-color:var(--main-cokor);
+    text-transform: capitalize;
+}

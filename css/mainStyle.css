@@ -1,0 +1,131 @@
+/*
+ DO NOT froget, the Content styles here is previously styled with CSSResets
+ */
+ /*
+ ==============================Index===================================
+ 1-Common Style
+ 2-General Style
+ 3-Header
+ 4-Sections
+  4.1-Main Section
+  4.2-
+  4.3-
+  4.4-
+ 5-footer
+ =========================================================================
+ 1-Common Style
+ =========================================================================
+ */
+ .overlay{
+    position: absolute;
+    width: 100%; /*because of position absolute< we garuntee that width and hight correct by fixed overwrite them*/
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.container{
+    width: 80%;
+    margin: auto;    
+}
+.hover-opacity{
+    transition: opacity .5s;  /*اي ايفيكت هيتعمل علي العنصر المعني, اعمله ف نص ثانية! */
+/*هل كل الخصائص ؟ لاء هنا  الاوباسيتي بس*/
+}
+.hover-opacity:hover{
+    opacity: 0.8;        /* هذا حالة اخري من العنصر بعد الهوفر (اعتبره عنصر جديد خالص)*/
+}
+/* common section features*/
+.section-header-title{
+    font-size: 35px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.section-header-line{
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 0 auto 70px;
+    background-color: var(--main-cokor);
+}
+.sections-paddings{
+    padding:120px 0;
+}
+/*right to left effect*/
+.ltr-effect{
+    position: relative;
+}
+.ltr-effect::after{
+    position: absolute;
+    content:""; /*متنسهاش تاني!*/
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0; /*تكنيك فرد الفطير*/
+
+    background-color: #333333;
+    width: 0;
+
+    transition: width 0.5s;
+    z-index: -1;
+}
+.ltr-effect:hover::after{
+    width: 100%;
+}
+
+/* Top to Bottom effect*/
+.ttb-effect{
+    position: relative;
+}
+.ttb-effect::after{
+    position: absolute;
+    content:""; /*متنسهاش تاني!*/
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0; /*تكنيك فرد الفطير*/
+
+    background-color: #333333;
+    width: 100%;
+
+    height: 0;
+
+    transition: height 0.5s;
+    z-index: -1; /*هتعمل مشكلة دي لو كان هتعمل ايفيكت ع عنصر عنده سوليد باك جراوند*/
+}
+.ttb-effect:hover::after{
+    height: 100%;
+}
+/*
+========================================================================================
+2-General Style
+========================================================================================
+*/
+*{
+    box-sizing: border-box; 
+    /*
+    اديله width
+    اديته ؟ تمام هو دا العرض بتاع العنصر شامل ال 
+    padding and borders 
+    باستثناء ال margin 
+    */
+}
+body{
+    font-family: 'Varela Round', sans-serif; 
+    height: 8000px;
+}
+button{
+    /*font-family: 'Varela Round', sans-serif; /*Do not Repaet yourself */
+    font-family: inherit;
+
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}

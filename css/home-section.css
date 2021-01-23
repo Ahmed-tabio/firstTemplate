@@ -1,0 +1,61 @@
+/*
+==========================================================================================
+4-  4.1-Main Section
+
+    structure
+            level 1                                                Section .home-section
+            level 2                                                     div .overlay 
+            level 3                                              div home-section-content
+            level 4     h1 .home-section-content-title      p .home-section-content-describtion            button .btn 
+            level 5                                                                            btn btn-start  btn btn-learn                               
+==========================================================================================
+*/
+.home-section{
+    height: 100vh;
+    background-image: url("../images/background/background1.webp");
+    background-size: cover;
+    position: relative; /*because its child .overlay and .home-section-content class takes an absolute*/
+}
+
+/* Hero Image Technique*/
+.home-section-content{
+   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 65%;  /*position بتغير ال "full width"  <--------  */
+    text-align: center;
+    color: var(--white-color);
+}
+.home-section-content-title {
+    font-family: 'Montserrat', sans-serif; /*this type for All Headings*/
+    font-weight: 900;
+    /*size: 70%;*/
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.home-section-content_description{
+    font-family: inherit;
+    margin: 15px 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+} 
+
+.home-section .btn {
+    /*font-family: 'Varela Round', sans-serif;*/ /*General*/
+    width: 150px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer; /*implemented in link by default*/
+    font-size: 18px;
+}
+.btn-start{
+    background-color: var(--white-color);
+} 
+.btn-learn{
+    margin-left: 10px;
+    background-color: var(--main-cokor);
+    color: var(--white-color);
+}
